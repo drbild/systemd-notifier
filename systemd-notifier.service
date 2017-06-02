@@ -1,0 +1,10 @@
+[Unit]
+Description=Notifier for Systemd Unit Status Changes
+
+[Service]
+ExecStart=/usr/bin/systemd-notifier -c /etc/systemd-notifier/conf.yml
+Restart=always
+RestartSec=10s
+
+[Install]
+WantedBy=multi-user.target
