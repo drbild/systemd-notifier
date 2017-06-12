@@ -1,0 +1,8 @@
+systemd-notifier/
+
+debhelper.log
+files
+*.debhelper.log
+*.postinst.debhelper
+*.prerm.debhelper
+*.substvars

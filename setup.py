@@ -11,7 +11,8 @@ setup(name         = 'systemd_notifier',
           'License :: OSI Approved :: Apache Software License',
           'Programming Language :: Python',
       ],
-      packages     = ['systemd_notifier'],
+      packages     = ['systemd_notifier',
+                      'systemd_notifier.notifiers'],
       
       entry_points = {
           'console_scripts' : [

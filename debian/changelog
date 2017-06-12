@@ -1,0 +1,5 @@
+systemd-notifier (0.1.0-1) jessie; urgency=medium
+
+  * first release
+
+ -- David R. Bild <david.bild@xaptum.com>  Mon, 12 May 2017 11:54:14 -0500

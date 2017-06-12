@@ -1,0 +1,21 @@
+Source: systemd-notifier
+Section: admin
+Priority: extra
+Maintainer: David R. Bild <david@davidbild.org>
+Build-Depends: debhelper (>= 9),
+               python (>= 2.7),
+               python-setuptools,
+Homepage: https://github.com/drbild/systemd-notifier
+
+Package: systemd-notifier
+Architecture: all
+Depends:
+ ${misc:Depends},
+ ${python:Depends},
+ python-dbus,
+ python-gobject,
+ python-yaml
+Suggests:
+ systemd
+Description: Notify on systemd unit status changes
+ Send notifications on systemd unit status changes to Slack or email.
