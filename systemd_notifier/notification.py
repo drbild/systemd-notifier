@@ -9,7 +9,7 @@ def load_notifier(name):
         s1 = re.sub('(.)([A-Z][a-z]+)', r'\1_\2', name)
         return re.sub('([a-z0-9])([A-Z])', r'\1_\2', s1).lower()
     
-    module = importlib.import_module("notifiers.%s"%camel_case(name.capitalize()))
+    module = importlib.import_module("systemd_notifier.notifiers.%s"%camel_case(name.capitalize()))
     return getattr(module, name.capitalize())
 
 class Notification(object):
