@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(name         = 'systemd_notifier',
-      version      = '0.1.0',
+      version      = '0.1.1',
       author       = 'David R. Bild',
       author_email = 'david@davidbild.org',
       keywords     = 'systemd monitor alert notify unit slack email status change',
